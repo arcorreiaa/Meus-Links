@@ -1,5 +1,7 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
+
 import './home.css'
+import { Social } from '../../components/Social'
+import { FaLinkedin, FaInstagram } from 'react-icons/fa'
 
 export default function Home() {
   return (
@@ -9,7 +11,7 @@ export default function Home() {
 
       <main className='links'>
         <section className='link-area'>
-          <a href="#">
+          <a href="#" >
             <p className='link-text'>Portfólio</p>
           </a>
         </section>
@@ -25,6 +27,16 @@ export default function Home() {
             <p className='link-text'>Linkedin</p>
           </a>
         </section>
+
+        <footer>
+          <Social url="https://www.linkedin.com/in/arcorreiaa/">
+            <FaLinkedin size={35} color="#ff3a3a" />
+          </Social>
+
+          <Social url="https://www.instagram.com/arcoofc/">
+            <FaInstagram size={35} color="#ff3a3a" />
+          </Social>
+        </footer>
       </main>
     </div>
   )
